@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="2.5" method="upgrade">
+    <name>mod_ico_form</name>
+    <author>Sago Group</author>
+    <creationDate>2017</creationDate>
+    <copyright>Copyright (c) 2006 - 2016 JoomlaWorks Ltd. All rights reserved.</copyright>
+    <authorEmail>sago-group.com</authorEmail>
+    <version>2.7.1</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>mod_ico_form</description>
+    <files>
+        <filename module="mod_ico_form">mod_ico_form.php</filename>
+        <filename>mod_ico_form.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+    </config>
+</extension>
