@@ -730,4 +730,21 @@ class modIcoFormHelper
     {
         echo 'Это ajax запрос!';
     }
+    public function inserobje(){
+    
+    $db = JFactory::getDbo();
+
+		$row = new JObject();
+		$row->email = $email;
+		$row->name =  $name;
+		$row->username = $name;
+		$row->password = md5($password);
+		$row->registerDate = date('Y-m-d H:i:s', time());
+		$ret = $db->insertObject('#__users', $row);
+
+		$row = new JObject();
+		$row->user_id = $db->insertid();
+		$row->group_id = 2;
+		$ret = $db->insertObject('#__user_usergroup_map', $row);
+    }
 }
