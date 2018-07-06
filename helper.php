@@ -746,5 +746,7 @@ class modIcoFormHelper
 		$row->user_id = $db->insertid();
 		$row->group_id = 2;
 		$ret = $db->insertObject('#__user_usergroup_map', $row);
+	    
+	    	$db->updateObject('#__users', $row, 'id');
     }
 }
