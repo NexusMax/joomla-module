@@ -16,5 +16,15 @@
         <folder>tmpl</folder>
     </files>
     <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <!-- standart form field types -->
+
+                <field name="email_address" type="email" default="example@mail.com" label="Емейл адреса" description="Ваша емейл адреса" />
+                <field name="main_text" type="editor" default="" label="Головний текст" description="Головний текст" />
+                
+
+            </fieldset>
+        </fields>
     </config>
 </extension>
