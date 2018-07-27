@@ -1,7 +1,8 @@
 <?php
 
 defined('_JEXEC') or die ;
-
+// config data
+//$params->get('email_address')
 
 require_once __DIR__ .'/helper.php';
 
